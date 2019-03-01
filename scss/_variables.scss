@@ -1,0 +1,9 @@
+$element-margin: 80px;
+$bar-margin: 30px;
+$button-margin: 20px;
+
+@mixin flex-preset {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}

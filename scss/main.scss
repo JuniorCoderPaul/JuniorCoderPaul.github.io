@@ -1,4 +1,4 @@
-// @import '_variables.scss';
+@import '_variables.scss';
 // default code
 /*
  * Globals
@@ -101,4 +101,27 @@ body {
  */
 .mastfoot {
   color: rgba(255, 255, 255, 0.5);
+}
+
+// work
+.row {
+  width: 100%;
+  margin: $element-margin 0;
+  @include flex-preset;
+  .col {
+    width: auto;
+    margin: 0 $element-margin;
+    .choices {
+      background-color: #fff;
+      border: 1px solid red;
+      height: 50%;
+      margin: $bar-margin;
+      flex-direction: column;
+      @include flex-preset;
+      .choice-btn {
+        width: 200px;
+        margin: 0 $button-margin;
+      }
+    }
+  }
 }
