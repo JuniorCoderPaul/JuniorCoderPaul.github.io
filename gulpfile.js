@@ -6,10 +6,7 @@ const autoprefixer = require('autoprefixer') // load the autoprefixer plugin
 const cssnano = require('cssnano') // load the cssnano plugin
 // Define a task to compile Sass and run autoprefixer and cssnano
 gulp.task('sass', function () {
-  const plugins = [
-    autoprefixer({ browsers: ['last 2 version'] }),
-    cssnano()
-  ]
+  const plugins = [autoprefixer({ browsers: ['last 2 version'] }), cssnano()]
   return gulp
     .src('scss/**/*.scss') // source of any sass files
     .pipe(sass()) // run the sass compiler on the source file
