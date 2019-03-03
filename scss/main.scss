@@ -8,7 +8,7 @@ nav,
 footer {
   display: block;
 }
-
+// nav
 nav {
   position: fixed;
   top: 0;
@@ -18,8 +18,32 @@ nav {
   z-index: 9999;
   width: 100%;
 }
-
+// slideshow
 .carousel-item {
   width: 100%;
   height: auto;
+  position: relative;
 }
+.slide-info {
+  z-index: 5000;
+  position: absolute;
+  top: 0;
+  left: 25%;
+  background-color: #fff;
+  opacity: 0.6;
+  height: 100%;
+  width: 50%;
+  @include flex-preset;
+  flex-direction: column;
+}
+.sub-intro {
+  width: 70%;
+}
+.slide-btn {
+  opacity: 1;
+}
+.slide-img {
+  z-index: 1000;
+  // position: absolute;
+}
+// footer
