@@ -19,26 +19,37 @@ nav {
   width: 100%;
   height: auto;
   position: relative; }
+  .carousel-item .slide-info {
+    z-index: 5000;
+    position: absolute;
+    top: 0;
+    left: 60%;
+    background-color: #fff;
+    opacity: 0.6;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    .carousel-item .slide-info .sub-intro {
+      width: 70%;
+      font-family: 'ZCOOL QingKe HuangYou', cursive;
+      font-size: 2vw;
+      text-align: center;
+      margin-bottom: 10%; }
+    .carousel-item .slide-info .slide-btn {
+      opacity: 1;
+      margin-top: 10%; }
+  .carousel-item .slide-img {
+    z-index: 1000; }
 
-.slide-info {
-  z-index: 5000;
-  position: absolute;
-  top: 0;
-  left: 25%;
-  background-color: #fff;
-  opacity: 0.6;
-  height: 100%;
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column; }
+.email-input {
+  margin-right: 16px; }
 
-.sub-intro {
-  width: 70%; }
-
-.slide-btn {
-  opacity: 1; }
-
-.slide-img {
-  z-index: 1000; }
+.footer-copyright {
+  background-color: #000;
+  color: #fff; }
+  .footer-copyright a {
+    text-decoration: none;
+    color: #fff; }
