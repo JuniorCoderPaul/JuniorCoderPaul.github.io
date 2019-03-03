@@ -39,9 +39,9 @@ body {
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
 }
 
-.cover-container {
-  max-width: 42em;
-}
+// .cover-container {
+//   max-height: 52rem;
+// }
 
 /*
  * Header
@@ -109,7 +109,7 @@ body {
   margin: $element-margin 0;
   @include flex-preset;
   .col {
-    width: auto;
+    width: 280px;
     margin: 0 $element-margin;
     .choices {
       background-color: #fff;
